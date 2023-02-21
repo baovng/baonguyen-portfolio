@@ -25,7 +25,7 @@
 		mounted() {
 			setTimeout(() => {
 				this.isDrawn = true;
-			}, 1300);
+			}, 1000);
 			setTimeout(() => {
 				this.isFadedOut = true;
 			}, 2500);
@@ -39,7 +39,7 @@
 		stroke-dasharray: 350;
 		stroke-dashoffset: 350;
 		stroke-linecap: butt;
-		animation: draw-hexagon 1.5s ease-in-out forwards 0.1s;
+		animation: draw-hexagon 1.1s ease-in-out forwards 0.2s;
 	}
 
 	.letter-b-container {

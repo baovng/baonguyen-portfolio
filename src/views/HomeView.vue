@@ -4,16 +4,18 @@
 			<LogoAnimation />
 		</div>
 	</div>
-	<div class="hello-container" v-else>
-		<p>Hi, I'm Bao Nguyen</p>
+	<div class="content-container" v-else>
+		<About />
 	</div>
 </template>
 
 <script>
 	import LogoAnimation from '../components/LogoAnimation.vue';
+	import About from '@/components/About.vue';
 	export default {
 		components: {
 			LogoAnimation,
+			About,
 		},
 		data() {
 			return {
@@ -23,14 +25,14 @@
 		mounted() {
 			setTimeout(() => {
 				this.showLogo = false;
-			}, 5000); // Change 3000 to the duration of your logo animation in milliseconds
+			}, 3000); // Change 3000 to the duration of your logo animation in milliseconds
 		},
 	};
 </script>
 
 <style>
 	.logo-container,
-	.hello-container {
+	.content-container {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -42,7 +44,7 @@
 		font-size: 4rem;
 	}
 
-	.hello-container {
+	.content-container {
 		font-size: 3rem;
 		color: #fff;
 	}
