@@ -23,7 +23,7 @@
 		mounted() {
 			setTimeout(() => {
 				this.showLogo = false;
-			}, 3000); // Change 3000 to the duration of your logo animation in milliseconds
+			}, 5000); // Change 3000 to the duration of your logo animation in milliseconds
 		},
 	};
 </script>
@@ -34,7 +34,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		text-align: center;
 		height: 100vh;
 	}
 
