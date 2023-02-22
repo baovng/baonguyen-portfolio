@@ -1,7 +1,9 @@
-
-:root{
+:root {
 	--primary-color: rgb(86, 199, 178);
-	--background-color:rgba(79, 177, 159, 0.15);	
+	--background-color: rgba(79, 177, 159, 0.15);
+	--text-color1: rgb(207, 207, 207);
+	--text-color2: rgb(150, 150, 150);
+	--decor-color: rgb(88, 88, 88);
 }
 * {
 	margin: 0;
@@ -9,14 +11,12 @@
 	box-sizing: border-box;
 }
 html {
-  font-size: 16px; /* set the root font-size */
-  height: 100%;
+	font-size: 16px; /* set the root font-size */
+	height: 100%;
 }
 body {
 	background-color: #1e1e1e;
-	color: white;
 	font-family: 'Rubik', 'Roboto', 'Outfit', sans-serif;
 	font-size: 1rem; /* 1rem = 16px */
 	height: 100%;
-
 }
