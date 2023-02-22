@@ -1,10 +1,22 @@
+
+:root{
+	--primary-color: rgb(86, 199, 178);
+	--background-color:rgba(79, 177, 159, 0.15);	
+}
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+html {
+  font-size: 16px; /* set the root font-size */
+  height: 100%;
+}
 body {
 	background-color: #1e1e1e;
 	color: white;
 	font-family: 'Rubik', 'Roboto', 'Outfit', sans-serif;
+	font-size: 1rem; /* 1rem = 16px */
+	height: 100%;
+
 }
