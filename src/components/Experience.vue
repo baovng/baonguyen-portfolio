@@ -169,7 +169,7 @@
 		max-width: 1080px;
 	}
 	.wrapper.vh-80 {
-		height: 80vh;
+		height: 65vh;
 	}
 
 	h1 {
