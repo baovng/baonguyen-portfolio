@@ -14,6 +14,12 @@
 		<section class="mt-5">
 			<Experience />
 		</section>
+		<section>
+			<Project />
+		</section>
+		<section>
+			<Footer />
+		</section>
 	</div>
 </template>
 
@@ -22,13 +28,16 @@
 	import About from '@/components/About.vue';
 	import Intro from '@/components/Intro.vue';
 	import Experience from '@/components/Experience.vue';
-
+	import Project from '@/components/Project.vue';
+	import Footer from '@/components/Footer.vue';
 	export default {
 		components: {
 			LogoAnimation,
 			About,
 			Intro,
 			Experience,
+			Project,
+			Footer,
 		},
 		data() {
 			return {
