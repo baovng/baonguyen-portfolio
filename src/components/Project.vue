@@ -20,6 +20,8 @@
 					<div class="card-body py-0 px-3">
 						<h5 class="bh1 text-start mb-3" v-html="project.projectName"></h5>
 						<p class="bh5 bh7 mb-3">{{ project.description }}</p>
+					</div>
+					<div class="card-footer">
 						<p class="bh5 bh8">{{ project.programming }}</p>
 					</div>
 				</div>
@@ -27,6 +29,7 @@
 			<button
 				class="btn btn-lg btn-custom mt-4 px-4 text-uppercase view-more-btn"
 				@click="viewMoreProjects"
+				target="_blank"
 			>
 				View more my project
 			</button>
@@ -84,7 +87,7 @@
 				}
 			},
 			viewMoreProjects: function () {
-				window.location.href = 'https://github.com/dacinve?tab=repositories';
+				window.open('https://github.com/dacinve?tab=repositories', '_blank');
 			},
 		},
 	};
@@ -106,12 +109,19 @@
 		width: 300px;
 		box-shadow: 5px 5px 10px rgba(190, 190, 190, 0.1);
 		transition: transform 0.2s ease-out;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	.card-header {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		border: none;
+		background: none;
+	}
+	.card-footer {
 		border: none;
 		background: none;
 	}
@@ -156,5 +166,8 @@
 		display: block;
 		margin: 0 auto;
 		text-align: center;
+	}
+	.btn:visited {
+		border-color: none;
 	}
 </style>

@@ -2,7 +2,7 @@
 	<div class="container-fluid wrapper mx-5 vh-80">
 		<div class="d-flex align-items-start flex-column justify-content-center mx-5">
 			<div class="header my-5">Experiences</div>
-			<div class="container mt-4 bh3">
+			<div class="container mt-4 bh3 fixed-width">
 				<div class="d-flex align-items-start">
 					<div
 						class="nav flex-column nav-pills me-3"
@@ -171,7 +171,10 @@
 	.wrapper.vh-80 {
 		height: 65vh;
 	}
-
+	.fixed-width {
+		width: 850px;
+		max-width: 100%;
+	}
 	h1 {
 		color: var(--text-color1);
 		font-size: 2rem;
