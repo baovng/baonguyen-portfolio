@@ -2,10 +2,12 @@
   <div>
     <svg viewBox="0 0 100 104" class="hexagon" :class="{ 'fade-out': isFadedOut }">
       <polygon
-        points="50,0 95,25 95,75 50,100 5,75 5,25"
+        points="50,3 94,28 94,77 50,102 8,77 8,28"
         fill="transparent"
         stroke="#fff"
-        stroke-width="4"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="5"
       />
     </svg>
     <div class="letter-b-container">
@@ -48,7 +50,7 @@ export default {
   height: 104px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -100%);
+  transform: translate(-48%, -96%);
   font-size: 50px;
   line-height: 100px;
   text-align: center;

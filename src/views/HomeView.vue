@@ -21,6 +21,9 @@
     <section>
       <Footer />
     </section>
+    <section>
+      <Sm />
+    </section>
   </div>
 </template>
 
@@ -32,6 +35,7 @@ import Intro from "@/components/Intro.vue";
 import Experience from "@/components/Experience.vue";
 import Project from "@/components/Project.vue";
 import Footer from "@/components/Footer.vue";
+import Sm from "@/components/Sm.vue";
 export default {
   components: {
     LogoAnimation,
@@ -40,7 +44,8 @@ export default {
     Intro,
     Experience,
     Project,
-    Footer
+    Footer,
+    Sm
   },
   data() {
     return {
@@ -71,5 +76,8 @@ export default {
 .content-container {
   font-size: 3rem;
   color: var(--text-color1);
+}
+section {
+  max-width: 90%;
 }
 </style>

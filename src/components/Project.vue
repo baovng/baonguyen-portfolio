@@ -52,8 +52,7 @@ export default {
         {
           title: "311 Studios",
           githubLink: "https://github.com/dacinve/311studio",
-          projectName:
-            '<a href="https://dacinve.github.io/311studio/" target="_blank" class="bh1" style="text-decoration:none">311 Studios<a>',
+          projectName: "311 Studios",
           description:
             "A landing page for studio that I build when I first took Web Design. I leaned a lot from this project and land me a decent skill at design",
           programming: "HTML / CSS / JS"
@@ -81,7 +80,7 @@ export default {
     animateCard(index, isHovered) {
       const card = document.querySelectorAll(".project-card")[index];
       if (isHovered) {
-        card.style.transform = "translateY(-10px)";
+        card.style.transform = "translateY(-12px)";
       } else {
         card.style.transform = "translateY(0)";
       }
@@ -107,7 +106,7 @@ export default {
   padding: 5px;
   height: 350px;
   width: 300px;
-  box-shadow: 5px 5px 10px rgba(190, 190, 190, 0.1);
+  box-shadow: 5px 5px 20px rgb(19, 19, 19);
   transition: transform 0.2s ease-out;
   display: flex;
   flex-direction: column;
