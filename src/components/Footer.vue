@@ -1,5 +1,5 @@
 <template>
-	<div class="vh-20"></div>
+	<div class="vh-5"></div>
 </template>
 
 <script>
@@ -9,6 +9,6 @@
 <style>
 	.vh-20 {
 		display: block;
-		height: 20vh;
+		height: 5vh;
 	}
 </style>

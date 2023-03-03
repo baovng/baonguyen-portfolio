@@ -11,7 +11,7 @@
         >Texas Christian University</span> . I'm currently
         looking for a full-time job before I graduate in 2023!
       </h6>
-      <button class="btn btn-lg btn-custom mt-4 px-4 text-uppercase">See my Resume</button>
+      <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-custom mt-4 px-4 text-uppercase">See my Resume</a>
     </div>
   </div>
 </template>

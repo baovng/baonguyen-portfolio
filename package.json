@@ -9,7 +9,9 @@
 	},
 	"dependencies": {
 		"animejs": "^3.2.1",
+		"pdfjs-dist": "^3.4.120",
 		"vue": "^3.2.45",
+		"vue-pdf": "^4.3.0",
 		"vue-router": "^4.1.6"
 	},
 	"devDependencies": {
