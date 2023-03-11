@@ -1,5 +1,7 @@
 <template>
-	<div class="vh-5"></div>
+	<div class="container-fluid vh-5">
+		<h6 class="footer-text bh3">Bao Nguyen 2023</h6>
+	</div>
 </template>
 
 <script>
@@ -7,8 +9,13 @@
 </script>
 
 <style>
-	.vh-20 {
+	.vh-5 {
 		display: block;
 		height: 5vh;
+	}
+	.footer-text {
+		font-family: 'Roboto';
+		font-size: 0.9rem;
+		font-weight: 400;
 	}
 </style>

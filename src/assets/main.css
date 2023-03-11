@@ -1,5 +1,6 @@
 :root {
 	--primary-color: rgb(86, 199, 178);
+
 	--background-color: rgba(96, 202, 183, 0.1);
 	--text-color1: rgb(207, 207, 207);
 	--text-color2: rgb(150, 150, 150);
@@ -16,7 +17,77 @@ html {
 }
 body {
 	background-color: #1e1e1e;
-	font-family: 'Be Vietname Pro','Rubik', 'Roboto', 'Outfit', sans-serif;
+	font-family: 'Be Vietname Pro', 'Rubik', 'Roboto', 'Outfit', sans-serif;
 	font-size: 1rem; /* 1rem = 16px */
 	height: 100%;
+}
+
+.main {
+	margin: 0 auto;
+	max-width: 1600px;
+	min-height: 100vh;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.main {
+		margin: 0 auto;
+		max-width: 90%;
+		min-height: 100vh;
+	}
+	/* Experiences Section */
+	.fixed-width {
+		max-width: 700px;
+	}
+}
+@media (min-width: 768px) and (max-width: 1080px) {
+	/* Project Section */
+	.project-grid {
+		grid-template-columns: repeat(2, 1fr);
+		display: grid;
+		grid-gap: 20px;
+	}
+	.project-card {
+		padding: 25px 10px;
+		height: 100%;
+		width: 100%;
+		max-width: 350px;
+	}
+}
+@media (max-width: 886px) {
+	.custom-about {
+		flex-direction: column;
+	}
+	.col-8 {
+		width: 100%;
+		padding: 0 !important;
+	}
+
+	.col-4 {
+		width: 50%;
+		margin: 40px auto 0 auto !important;
+	}
+}
+@media (min-width: 580px) and (max-width: 768px) {
+	.main {
+		margin: 0 auto;
+		max-width: 95%;
+		min-height: 100vh;
+	}
+	/* Experiences Section */
+	.fixed-width {
+		max-width: 700px;
+	}
+	.project-grid {
+		grid-template-columns: repeat(2, 1fr);
+		display: grid;
+		grid-gap: 10px;
+	}
+	.project-card {
+		padding: 25px 10px;
+		min-height: auto;
+		width: 100%;
+	}
+	.sm {
+		display: none;
+	}
 }
