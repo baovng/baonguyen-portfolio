@@ -40,6 +40,7 @@
 	.header-4::before {
 		content: '04.  ';
 		left: 0;
+		margin-right: 10px;
 		font-size: 1.4rem;
 		color: var(--primary-color);
 	}

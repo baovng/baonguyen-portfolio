@@ -38,6 +38,9 @@ body {
 	.fixed-width {
 		max-width: 700px;
 	}
+	.bh4 {
+		width: 80%;
+	}
 }
 @media (min-width: 768px) and (max-width: 1080px) {
 	/* Project Section */
@@ -67,27 +70,67 @@ body {
 		margin: 40px auto 0 auto !important;
 	}
 }
-@media (min-width: 580px) and (max-width: 768px) {
+@media (max-width: 768px) {
+	.sm {
+		display: none;
+	}
+	.bh4 {
+		width: 90%;
+	}
+	.container-fluid > .mx-5 {
+		margin: 0 30px !important;
+	}
+	.bh2 {
+		font-size: 3rem !important;
+	}
+	.navbar > .container-fluid > .nav-link {
+		display: none !important;
+	}
+}
+@media (min-width: 640px) and (max-width: 768px) {
 	.main {
 		margin: 0 auto;
 		max-width: 95%;
 		min-height: 100vh;
 	}
-	/* Experiences Section */
-	.fixed-width {
-		max-width: 700px;
-	}
 	.project-grid {
 		grid-template-columns: repeat(2, 1fr);
 		display: grid;
-		grid-gap: 10px;
+		grid-gap: 20px;
 	}
 	.project-card {
 		padding: 25px 10px;
 		min-height: auto;
 		width: 100%;
+		max-width: 350px;
 	}
-	.sm {
-		display: none;
+}
+
+@media (max-width: 640px) {
+	.main {
+		margin: 0 auto;
+		max-width: 100%;
+		min-height: 100vh;
+	}
+
+	.project-grid {
+		grid-template-columns: repeat(1, 1fr);
+		display: grid;
+		grid-gap: 20px;
+		margin: auto !important;
+	}
+	.project-card {
+		padding: 25px 10px;
+		min-height: auto;
+		max-width: 100%;
+	}
+	.header::after {
+		width: 70%;
+	}
+}
+
+@media (max-width: 640px) {
+	.header::after {
+		width: 0%;
 	}
 }

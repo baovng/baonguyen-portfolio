@@ -1,7 +1,7 @@
 <template>
 	<div class="container-fluid my-5">
-		<div class="d-flex align-items-start flex-column justify-content-center">
-			<div class="header header-3 my-5 mx-5">What I've build</div>
+		<div class="d-flex align-items-start flex-column justify-content-center mx-5">
+			<div class="header header-3 my-5">What I've build</div>
 
 			<div class="project-grid mb-4 mx-auto">
 				<div
@@ -96,6 +96,7 @@
 <style>
 	.header-3::before {
 		content: '03.  ';
+		margin-right: 10px;
 	}
 	.project-grid {
 		display: grid;

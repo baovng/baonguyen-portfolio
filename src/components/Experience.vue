@@ -161,7 +161,7 @@
 </script>
 <style>
 	.vh-65 {
-		min-height: 65vh;
+		min-height: 60vh;
 		height: auto;
 	}
 	.fixed-width {
@@ -175,30 +175,13 @@
 		color: var(--text-color2);
 		text-align: left;
 	}
-	.header {
-		position: relative;
-		font-size: 1.75rem;
-		color: var(--primary-color);
-		font-weight: 700;
-		font-family: 'Roboto';
-	}
 
 	.header-2::before {
 		content: '02.  ';
 		left: 0;
+		margin-right: 10px;
 		font-size: 1.5rem;
 		color: var(--primary-color);
-	}
-
-	.header::after {
-		content: '';
-		display: block;
-		width: 120%;
-		height: 1px;
-		background-color: var(--decor-color);
-		position: absolute;
-		top: 50%;
-		left: 105%;
 	}
 
 	/* active nav link */

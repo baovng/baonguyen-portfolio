@@ -3,16 +3,12 @@
 		<nav class="navbar" :class="navbarClasses" :style="{ transform: translateY }">
 			<div class="container-fluid">
 				<a href="/" class="logo">
-					<img
-						src="@/assets/logo1.png"
-						class="float-start m-1 mt-2"
-						alt="..."
-						style="width: 44px"
-					/>
+					<img src="@/assets/logo1.png" class="float-start" alt="..." style="width: 44px" />
 				</a>
 
 				<div
 					class="nav-link nav-link-custom-2 d-flex flex-row justify-content-end align-items-center"
+					v-if="isToggled"
 				>
 					<div v-for="(section, index) in sections" :key="index" class="ms-4">
 						<router-link :to="'/' + section.id" class="nav-text-custom">
@@ -27,6 +23,15 @@
 						class="btn btn-sm btn-custom ms-4 px-3 btn-nav"
 						>Resume</a
 					>
+				</div>
+
+				<!-- //toggle menu -->
+				<div class="">
+					<button class="toggle-btn" @click="isToggled = !isToggled">
+						<div :class="{ line: true, 'line-1': true, toggled: isToggled }"></div>
+						<div :class="{ line: true, 'line-2': true, toggled: isToggled }"></div>
+						<div :class="{ line: true, 'line-3': true, toggled: isToggled }"></div>
+					</button>
 				</div>
 			</div>
 		</nav>
@@ -46,6 +51,7 @@
 					{ id: '03', section: 'Project' },
 					{ id: '04', section: 'Contact' },
 				],
+				isToggled: false,
 			};
 		},
 		mounted() {
@@ -137,5 +143,25 @@
 		font-size: 0.9rem !important;
 		font-family: 'Be Vietnam Pro', sans-serif;
 		border-radius: 3px !important;
+	}
+
+	.toggle-btn {
+		background: transparent;
+		border: none;
+	}
+	.line {
+		height: 2px;
+		width: 35px;
+		background-color: aqua;
+		margin-right: 12px;
+	}
+	.line-1 {
+		margin-bottom: 10px;
+	}
+	.line-2 {
+		margin-bottom: 10px;
+	}
+	.line-3 {
+		margin-bottom: 2px;
 	}
 </style>

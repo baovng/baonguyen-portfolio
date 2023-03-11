@@ -52,7 +52,7 @@
 	}
 	.header {
 		position: relative;
-		font-size: 1.75rem;
+		font-size: 1.5rem;
 		color: var(--primary-color);
 		font-weight: 700;
 		font-family: 'Roboto';
@@ -68,7 +68,7 @@
 	.header::after {
 		content: '';
 		display: block;
-		width: 120%;
+		width: 100%;
 		height: 1px;
 		background-color: rgb(121, 121, 121);
 		position: absolute;
