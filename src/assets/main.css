@@ -70,6 +70,11 @@ body {
 		margin: 40px auto 0 auto !important;
 	}
 }
+@media (min-width: 769px) {
+	.offcanvas {
+		display: none !important;
+	}
+}
 @media (max-width: 768px) {
 	.sm {
 		display: none;
@@ -81,10 +86,13 @@ body {
 		margin: 0 30px !important;
 	}
 	.bh2 {
-		font-size: 3rem !important;
+		font-size: 3.5rem !important;
 	}
 	.navbar > .container-fluid > .nav-link {
 		display: none !important;
+	}
+	.burger {
+		display: block !important;
 	}
 }
 @media (min-width: 640px) and (max-width: 768px) {
@@ -109,10 +117,12 @@ body {
 @media (max-width: 640px) {
 	.main {
 		margin: 0 auto;
-		max-width: 100%;
+		max-width: 97%;
 		min-height: 100vh;
 	}
-
+	.bh2 {
+		font-size: 3rem !important;
+	}
 	.project-grid {
 		grid-template-columns: repeat(1, 1fr);
 		display: grid;
@@ -127,10 +137,61 @@ body {
 	.header::after {
 		width: 70%;
 	}
+	.bh6 {
+		font-size: 2.5rem !important;
+	}
 }
 
-@media (max-width: 640px) {
+@media (max-width: 600px) {
 	.header::after {
 		width: 0%;
+	}
+	.container-fluid > .mx-5 {
+		margin: 0 10px !important;
+	}
+}
+
+@media (max-width: 550px) {
+	.horizontal {
+		display: block !important;
+	}
+	.fixed-width > .vertical {
+		display: none !important;
+	}
+	.horizontal-scroll {
+		min-width: 100%;
+		overflow-x: auto;
+		white-space: nowrap;
+	}
+	.fixed-width {
+		padding: 0;
+	}
+	.col-4 {
+		width: 70%;
+		margin: 40px auto 0 auto !important;
+	}
+	.canvas-nav {
+		font-size: 1.2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 15px 0;
+	}
+	.offcanvas {
+		max-width: 80vw;
+	}
+}
+@media (max-width: 414px) {
+	.bh2 {
+		font-size: 2rem !important;
+		line-height: 2.75rem !important;
+	}
+	.bh6 {
+		font-size: 2.5rem !important;
+	}
+	.view-more-btn,
+	.btn-custom {
+		font-size: 0.9rem !important;
 	}
 }

@@ -1,14 +1,13 @@
 <template>
 	<div class="container-fluid">
 		<nav class="navbar" :class="navbarClasses" :style="{ transform: translateY }">
-			<div class="container-fluid">
+			<div class="container-fluid navbar-custom">
 				<a href="/" class="logo">
 					<img src="@/assets/logo1.png" class="float-start" alt="..." style="width: 44px" />
 				</a>
 
 				<div
 					class="nav-link nav-link-custom-2 d-flex flex-row justify-content-end align-items-center"
-					v-if="isToggled"
 				>
 					<div v-for="(section, index) in sections" :key="index" class="ms-4">
 						<router-link :to="'/' + section.id" class="nav-text-custom">
@@ -26,8 +25,14 @@
 				</div>
 
 				<!-- //toggle menu -->
-				<div class="">
-					<button class="toggle-btn" @click="isToggled = !isToggled">
+				<div :class="{ burger: true, toggled: isToggled }">
+					<button
+						class="toggle-btn"
+						@click="isToggled = !isToggled"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasRight"
+						aria-controls="offcanvasRight"
+					>
 						<div :class="{ line: true, 'line-1': true, toggled: isToggled }"></div>
 						<div :class="{ line: true, 'line-2': true, toggled: isToggled }"></div>
 						<div :class="{ line: true, 'line-3': true, toggled: isToggled }"></div>
@@ -35,6 +40,41 @@
 				</div>
 			</div>
 		</nav>
+		<div
+			class="offcanvas offcanvas-end bg-dark"
+			id="offcanvasRight"
+			aria-labelledby="offcanvasRightLabel"
+		>
+			<div class="offcanvas-header m-4">
+				<div :class="{ burger: true, toggled: isToggled }">
+					<button
+						class="toggle-btn align-items-center"
+						@click="isToggled = !isToggled"
+						data-bs-dismiss="offcanvas"
+						aria-label="Close"
+					>
+						<div :class="{ line: true, 'line-1': true, toggled: isToggled }"></div>
+						<div :class="{ line: true, 'line-2': true, toggled: isToggled }"></div>
+						<div :class="{ line: true, 'line-3': true, toggled: isToggled }"></div>
+					</button>
+				</div>
+			</div>
+			<div class="offcanvas-body">
+				<div v-for="(section, index) in sections" :key="index" class="">
+					<router-link :to="'/' + section.id" class="nav-text-custom canvas-nav">
+						<span>{{ section.id }}.</span>
+						{{ section.section }}
+					</router-link>
+				</div>
+				<a
+					href="/resume.pdf"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="btn btn-sm btn-custom mt-5 px-5 btn-nav"
+					>Resume</a
+				>
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -108,8 +148,12 @@
 		transition: transform 0.38s ease-in-out;
 		z-index: 10;
 		box-shadow: none;
+		left: 0;
+		padding: 20px 0;
 	}
-
+	.navbar-custom {
+		margin: 0 2%;
+	}
 	.navbar-hidden {
 		transform: translateY(-100%);
 		box-shadow: none;
@@ -145,23 +189,67 @@
 		border-radius: 3px !important;
 	}
 
+	.offcanvas-body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		max-height: 70%;
+	}
+	.canvas-nav {
+		font-size: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 20px 0;
+	}
 	.toggle-btn {
 		background: transparent;
 		border: none;
 	}
+	.burger {
+		font-size: 2rem !important;
+		font-size: 0rem !important;
+		transition: all 0.3s ease-in;
+		display: none;
+		z-index: 1000;
+		/* border: red 1px solid; */
+	}
+	.burger:hover {
+		/* transform: scale(1.1); */
+	}
 	.line {
 		height: 2px;
-		width: 35px;
-		background-color: aqua;
-		margin-right: 12px;
+		width: 30px;
+		background-color: var(--primary-color);
 	}
+
 	.line-1 {
-		margin-bottom: 10px;
+		margin-bottom: 7px;
+		transition: all 0.4s ease-in;
 	}
 	.line-2 {
-		margin-bottom: 10px;
+		margin-bottom: 7px;
+		transition: all 0.4s ease-in;
 	}
 	.line-3 {
-		margin-bottom: 2px;
+		margin-bottom: 0px;
+		transition: all 0.4s ease-in;
+	}
+	.burger.toggled {
+		transform: rotate(180deg);
+	}
+	.line-1.toggled {
+		margin-bottom: -2px;
+		transform: rotate(45deg);
+	}
+	.line-2.toggled {
+		margin-bottom: -2px;
+		transform: rotate(45deg);
+		opacity: 0;
+	}
+	.line-3.toggled {
+		transform: rotate(-45deg);
 	}
 </style>

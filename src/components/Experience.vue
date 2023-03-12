@@ -3,7 +3,7 @@
 		<div class="d-flex align-items-start flex-column justify-content-center mx-5">
 			<div class="header header-2 my-5">Experiences</div>
 			<div class="container mt-4 bh3 fixed-width">
-				<div class="d-flex align-items-start">
+				<div class="d-flex align-items-start vertical">
 					<div
 						class="nav flex-column nav-pills me-3"
 						id="v-pills-tab"
@@ -114,6 +114,116 @@
 						</div>
 					</div>
 				</div>
+				<!-- this is for horizontal -->
+				<div class="horizontal">
+					<nav class="horizontal-scroll">
+						<div class="nav nav-pills my-3" id="nav-tab" role="tablist">
+							<button
+								class="nav-link active nav-link-custom-horizontal"
+								id="nav-home-tab"
+								data-bs-toggle="tab"
+								data-bs-target="#nav-home"
+								type="button"
+								role="tab"
+								aria-controls="nav-home"
+								aria-selected="true"
+							>
+								TCU
+							</button>
+							<button
+								class="nav-link nav-link-custom-horizontal"
+								id="nav-profile-tab"
+								data-bs-toggle="tab"
+								data-bs-target="#nav-profile"
+								type="button"
+								role="tab"
+								aria-controls="nav-profile"
+								aria-selected="false"
+							>
+								TCU
+							</button>
+							<button
+								class="nav-link nav-link-custom-horizontal"
+								id="nav-contact-tab"
+								data-bs-toggle="tab"
+								data-bs-target="#nav-contact"
+								type="button"
+								role="tab"
+								aria-controls="nav-contact"
+								aria-selected="false"
+							>
+								Freelance
+							</button>
+							<button
+								class="nav-link nav-link-custom-horizontal"
+								id="nav-contact-tab"
+								data-bs-toggle="tab"
+								data-bs-target="#nav-contact"
+								type="button"
+								role="tab"
+								aria-controls="nav-contact"
+								aria-selected="false"
+							>
+								Start up
+							</button>
+						</div>
+					</nav>
+
+					<div class="tab-content" id="nav-tabContent">
+						<div
+							class="tab-pane fade show active mx-3"
+							id="nav-home"
+							role="tabpanel"
+							aria-labelledby="nav-home-tab"
+						>
+							<h5 class="bh1 text-start">{{ job1des }}</h5>
+							<h6 class="bh5 mt-2 mb-3">{{ job1Time }}</h6>
+							<h6 class="bh5 lh-base mx-3" v-for="(job, index) in job1" :key="index">
+								<i class="fa fa-light fa-caret-right me-2" />
+								{{ job }}
+							</h6>
+						</div>
+						<div
+							class="tab-pane fade mx-3"
+							id="nav-profile"
+							role="tabpanel"
+							aria-labelledby="nav-profile-tab"
+						>
+							<h5 class="bh1 text-start">{{ job2des }}</h5>
+							<h6 class="bh5 mt-2 mb-3">{{ job2Time }}</h6>
+							<h6 class="bh5 lh-base mx-3" v-for="(job, index) in job2" :key="index">
+								<i class="fa fa-light fa-caret-right me-2" />
+								{{ job }}
+							</h6>
+						</div>
+						<div
+							class="tab-pane fade mx-3"
+							id="nav-contact"
+							role="tabpanel"
+							aria-labelledby="nav-contact-tab"
+						>
+							<h5 class="bh1 text-start">{{ job3des }}</h5>
+							<h6 class="bh5 mt-2 mb-3">{{ job3Time }}</h6>
+							<h6 class="bh5 lh-base mx-3" v-for="(job, index) in job3" :key="index">
+								<i class="fa fa-light fa-caret-right me-2" />
+								{{ job }}
+							</h6>
+						</div>
+						<div
+							class="tab-pane fade mx-3"
+							id="nav-contact"
+							role="tabpanel"
+							aria-labelledby="nav-contact-tab"
+						>
+							<h5 class="bh1 text-start">{{ job4des }}</h5>
+							<h6 class="bh5 mt-2 mb-3">{{ job4Time }}</h6>
+							<h6 class="bh5 lh-base mx-3" v-for="(job, index) in job4" :key="index">
+								<i class="fa fa-light fa-caret-right me-2" />
+								{{ job }}
+							</h6>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -160,6 +270,9 @@
 	};
 </script>
 <style>
+	.horizontal {
+		display: none;
+	}
 	.vh-65 {
 		min-height: 60vh;
 		height: auto;
@@ -194,8 +307,9 @@
 		transition: border-left 0.5s ease-in-out;
 		font-size: 0.9rem;
 	}
+
 	.nav-pills .nav-link-custom.active {
-		background-color: var(--background-color);
+		background-color: var(--background-color) !important;
 		color: var(--primary-color);
 		border-left: 2px solid var(--primary-color) !important;
 		border-radius: 0;
@@ -214,5 +328,43 @@
 		background-color: var(--background-color);
 		color: var(--primary-color);
 		border-left-color: var(--primary-color) !important;
+	}
+	/* For horizontal */
+
+	.nav-link-custom-horizontal {
+		color: var(--text-color1);
+		text-align: left;
+		padding: 5px 30px;
+		border-bottom: 2px solid var(--decor-color) !important ;
+		border-radius: 0 !important ;
+		transition: border-left 0.5s ease-in-out;
+		font-size: 0.9rem;
+	}
+	.nav-pills .nav-link-custom-horizontal.active {
+		background-color: var(--background-color) !important;
+		color: var(--primary-color);
+		border-bottom: 2px solid var(--primary-color) !important;
+		border-radius: 0;
+	}
+
+	.nav-pills .nav-link-custom-horizontal:hover {
+		background-color: var(--background-color);
+		color: var(--primary-color);
+	}
+	.nav-pills .nav-link-custom-horizontal.active ~ .nav-link-custom-horizontal {
+		transition: border-left 0.5s ease-in-out;
+	}
+
+	.nav-pills .nav-link-custom-horizontal.active ~ .nav-link-custom-horizontal:hover {
+		background-color: var(--background-color);
+		color: var(--primary-color);
+		border-bottom-color: var(--primary-color) !important;
+	}
+
+	.horizontal-scroll {
+		overflow-x: auto;
+	}
+	.horizontal-scroll > .nav {
+		flex-wrap: nowrap;
 	}
 </style>
