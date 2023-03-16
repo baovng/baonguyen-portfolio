@@ -48,7 +48,7 @@
 						githubLink: 'https://github.com/CLP-2-0',
 						projectName: 'Chinese Learning Platform',
 						description:
-							'Built a school system that involve different user roles with varying permissions.The website also require a user authentication system to ensure that only authorized users can access the appropriate pages. ',
+							'Built a school system that involve different user roles with varying permissions.The website also requires a user authentication system to ensure that only authorized users can access the appropriate pages. ',
 						programming: 'Vue 3 / SpringBoots / Auth0 / MongoDB',
 					},
 					{
@@ -56,7 +56,7 @@
 						githubLink: 'https://github.com/dacinve/311studio',
 						projectName: '311 Studios',
 						description:
-							'A landing page for studio that I build when I first took Web Design. I leaned a lot from this project and land me a decent skill at design',
+							'A landing page for studio that I built when I first took Web Design. I leaned a lot from this project and land me a decent skill at design',
 						programming: 'HTML / CSS / JS',
 					},
 					{
@@ -64,7 +64,7 @@
 						githubLink: 'https://github.com/dacinve/UserCRUD',
 						projectName: 'User CRUD',
 						description:
-							'My first Vue project of building a web application with CRUD functionality involves creating a system that allows users to Create, Read, Update, and Delete data in a database.',
+							'My first Vue project of building a web application with CRUD functionality involved creating a system that allows users to Create, Read, Update, and Delete data in a database.',
 						programming: 'Vue 3 / Vite / Json DB',
 					},
 					{
@@ -72,7 +72,7 @@
 						githubLink: 'https://github.com/dacinve/WebProject/tree/heroku',
 						projectName: 'TCU Horned Frog',
 						description:
-							'I work with a team of 4 members, we built a full-stak web application for scheduling a Horned Frog TCU for any event. This was my great time that I set a foot on Back-end and Database',
+							'I worked with a team of 4 members, built a full-stack web application for scheduling a Horned Frog TCU for any event. This was my great time that I set a foot on Back-end and Database',
 						programming: 'Vue 3 / SpringBoots / MySQL',
 					},
 				],

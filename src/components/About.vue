@@ -36,8 +36,8 @@
 		name: 'About',
 		data() {
 			return {
-				me1: 'My name is Bao Nguyen, I really enjoy creating things that on the internet. My interest in web development since I first took class of Web Designer back in May 2018.',
-				me2: "I enjoy being the bridge between <span style='color: var(--primary-color);'>engineering</span> and <span style='color: var(--primary-color);'>design</span>, and feel right as home as a front end engineer. I'm experienced in developing products for the web, from simple landing pages to full-fledged web apps.",
+				me1: "From as early as I can remember, I have always had a fascination with <span style='color: var(--primary-color);'>computers</span> and the way in which they work. <span style='color: var(--primary-color);'>Computer science</span> is thus, the natural progression for me as I continue to define the person I want to become in later life.",
+				me2: "I enjoy being the bridge between <span style='color: var(--primary-color);'>engineering</span> and <span style='color: var(--primary-color);'>design</span>, and feel right as home as a front-end engineer. I'm experienced in developing products for the web, from simple landing pages to full-fledged web apps.",
 				me3: "Now that I am <span style='color: var(--primary-color);'>seeking a full-time job</span>, I am eager to apply my skills and knowledge to contribute to a dynamic team and take on new challenges in the field of web development.",
 				me4: "<span style='color: var(--primary-color);'>Here are a few technologies I've been working with recently:</span>",
 				langs: ['JavaScript', 'Vue 3', 'Java', 'SpringBoots', 'MongoDB', 'Python'],

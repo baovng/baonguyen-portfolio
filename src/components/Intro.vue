@@ -5,9 +5,9 @@
 			<h1 class="big-heading bh2">{{ h2 }}</h1>
 			<h1 class="big-heading bh2">{{ h3 }}</h1>
 			<h6 class="mt-3 big-heading bh3 bh4">
-				I'm in my last year studying computer information technology and web developer at
+				I'm senior majoring in computer information technology and web developer at
 				<span style="color: var(--primary-color)">Texas Christian University</span> . I'm currently
-				seeking for a full-time job before I graduate in 2023!
+				seeking for a full-time job before I graduate in December 2023!
 			</h6>
 			<a
 				href="/resume.pdf"

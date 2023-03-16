@@ -11,13 +11,13 @@
 			<section>
 				<Intro />
 			</section>
-			<section>
+			<section id="01">
 				<About />
 			</section>
-			<section class="mt-5">
+			<section id="02" class="mt-5">
 				<Experience />
 			</section>
-			<section>
+			<section id="03">
 				<Project />
 			</section>
 
@@ -27,7 +27,7 @@
 			<section class="sm">
 				<Mail />
 			</section>
-			<section>
+			<section id="04">
 				<Contact />
 			</section>
 			<section>

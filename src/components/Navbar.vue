@@ -10,10 +10,10 @@
 					class="nav-link nav-link-custom-2 d-flex flex-row justify-content-end align-items-center"
 				>
 					<div v-for="(section, index) in sections" :key="index" class="ms-4">
-						<router-link :to="'/' + section.id" class="nav-text-custom">
+						<a :href="'#' + section.id" class="nav-text-custom">
 							<span>{{ section.id }} .</span>
 							{{ section.section }}
-						</router-link>
+						</a>
 					</div>
 					<a
 						href="/resume.pdf"
@@ -60,11 +60,11 @@
 				</div>
 			</div>
 			<div class="offcanvas-body">
-				<div v-for="(section, index) in sections" :key="index" class="">
-					<router-link :to="'/' + section.id" class="nav-text-custom canvas-nav">
+				<div v-for="(section, index) in sections" :key="index">
+					<a :href="'#' + section.id" class="nav-text-custom canvas-nav">
 						<span>{{ section.id }}.</span>
 						{{ section.section }}
-					</router-link>
+					</a>
 				</div>
 				<a
 					href="/resume.pdf"
@@ -143,6 +143,7 @@
 		background-color: rgba(30, 30, 30);
 		position: fixed;
 		top: 0;
+		-webkit-backdrop-filter: blur(10px);
 		backdrop-filter: blur(4px);
 		border: none;
 		transition: transform 0.38s ease-in-out;
@@ -188,7 +189,9 @@
 		font-family: 'Be Vietnam Pro', sans-serif;
 		border-radius: 3px !important;
 	}
-
+	.offcanvas-header {
+		height: 30px;
+	}
 	.offcanvas-body {
 		display: flex;
 		flex-direction: column;

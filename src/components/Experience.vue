@@ -120,48 +120,48 @@
 						<div class="nav nav-pills my-3" id="nav-tab" role="tablist">
 							<button
 								class="nav-link active nav-link-custom-horizontal"
-								id="nav-home-tab"
+								id="nav-1-tab"
 								data-bs-toggle="tab"
-								data-bs-target="#nav-home"
+								data-bs-target="#nav-1"
 								type="button"
 								role="tab"
-								aria-controls="nav-home"
+								aria-controls="nav-1"
 								aria-selected="true"
 							>
 								TCU
 							</button>
 							<button
 								class="nav-link nav-link-custom-horizontal"
-								id="nav-profile-tab"
+								id="nav-2-tab"
 								data-bs-toggle="tab"
-								data-bs-target="#nav-profile"
+								data-bs-target="#nav-2"
 								type="button"
 								role="tab"
-								aria-controls="nav-profile"
+								aria-controls="nav-2"
 								aria-selected="false"
 							>
 								TCU
 							</button>
 							<button
 								class="nav-link nav-link-custom-horizontal"
-								id="nav-contact-tab"
+								id="nav-3-tab"
 								data-bs-toggle="tab"
-								data-bs-target="#nav-contact"
+								data-bs-target="#nav-3"
 								type="button"
 								role="tab"
-								aria-controls="nav-contact"
+								aria-controls="nav-3"
 								aria-selected="false"
 							>
 								Freelance
 							</button>
 							<button
 								class="nav-link nav-link-custom-horizontal"
-								id="nav-contact-tab"
+								id="nav-4-tab"
 								data-bs-toggle="tab"
-								data-bs-target="#nav-contact"
+								data-bs-target="#nav-4"
 								type="button"
 								role="tab"
-								aria-controls="nav-contact"
+								aria-controls="nav-4"
 								aria-selected="false"
 							>
 								Start up
@@ -172,9 +172,9 @@
 					<div class="tab-content" id="nav-tabContent">
 						<div
 							class="tab-pane fade show active mx-3"
-							id="nav-home"
+							id="nav-1"
 							role="tabpanel"
-							aria-labelledby="nav-home-tab"
+							aria-labelledby="nav-1-tab"
 						>
 							<h5 class="bh1 text-start">{{ job1des }}</h5>
 							<h6 class="bh5 mt-2 mb-3">{{ job1Time }}</h6>
@@ -183,12 +183,7 @@
 								{{ job }}
 							</h6>
 						</div>
-						<div
-							class="tab-pane fade mx-3"
-							id="nav-profile"
-							role="tabpanel"
-							aria-labelledby="nav-profile-tab"
-						>
+						<div class="tab-pane fade mx-3" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">
 							<h5 class="bh1 text-start">{{ job2des }}</h5>
 							<h6 class="bh5 mt-2 mb-3">{{ job2Time }}</h6>
 							<h6 class="bh5 lh-base mx-3" v-for="(job, index) in job2" :key="index">
@@ -196,12 +191,7 @@
 								{{ job }}
 							</h6>
 						</div>
-						<div
-							class="tab-pane fade mx-3"
-							id="nav-contact"
-							role="tabpanel"
-							aria-labelledby="nav-contact-tab"
-						>
+						<div class="tab-pane fade mx-3" id="nav-3" role="tabpanel" aria-labelledby="nav-3-tab">
 							<h5 class="bh1 text-start">{{ job3des }}</h5>
 							<h6 class="bh5 mt-2 mb-3">{{ job3Time }}</h6>
 							<h6 class="bh5 lh-base mx-3" v-for="(job, index) in job3" :key="index">
@@ -209,12 +199,7 @@
 								{{ job }}
 							</h6>
 						</div>
-						<div
-							class="tab-pane fade mx-3"
-							id="nav-contact"
-							role="tabpanel"
-							aria-labelledby="nav-contact-tab"
-						>
+						<div class="tab-pane fade mx-3" id="nav-4" role="tabpanel" aria-labelledby="nav-4-tab">
 							<h5 class="bh1 text-start">{{ job4des }}</h5>
 							<h6 class="bh5 mt-2 mb-3">{{ job4Time }}</h6>
 							<h6 class="bh5 lh-base mx-3" v-for="(job, index) in job4" :key="index">
@@ -235,10 +220,10 @@
 			return {
 				job1des: 'Full-Stack Web Development Project',
 				job1: [
-					'Developed a Chinese Learning Platform system website/application project as part of my studies.',
-					'Developed a full-stack application using Vue3 JS, SpringBoots, Auth0, MongoDB, Git.',
-					'Utilized my skills in frontend and backend development, database management, and graphic design to build a user-friendly and visually appealing website/application.',
-					'Designed and implemented features such as course management, student and teacher profiles, assignment submissions, and grades tracking.',
+					'Developing a Chinese Learning Platform system website/application project',
+					'Responsibility as a full-stack developer using Vue3 JS, SpringBoots, Auth0, MongoDB, Git.',
+					'Utilizing my skills in frontend and backend development, database management, and graphic design to build a user-friendly and visually appealing website/application.',
+					'Designing and implementing features such as course management, student and teacher profiles, assignment submissions, and grades tracking.',
 				],
 				job1Time: 'Aug 2022 - Present',
 
