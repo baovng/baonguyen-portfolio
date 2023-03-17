@@ -220,34 +220,34 @@
 			return {
 				job1des: 'Full-Stack Web Development Project',
 				job1: [
-					'Developing a Chinese Learning Platform system website/application project',
+					'Developing a Chinese Learning Platform system website/application project.',
 					'Responsibility as a full-stack developer using Vue3 JS, SpringBoots, Auth0, MongoDB, Git.',
-					'Utilizing my skills in frontend and backend development, database management, and graphic design to build a user-friendly and visually appealing website/application.',
+					'Utilizing my skills in frontend and backend development, database management, and graphic design to build an user-friendly and visually appealing website/application.',
 					'Designing and implementing features such as course management, student and teacher profiles, assignment submissions, and grades tracking.',
 				],
 				job1Time: 'Aug 2022 - Present',
 
 				job2des: 'Java and Python-based system help desk',
 				job2: [
-					'Java and Python-based system help desk.',
+					'Served as the first point of contact for student encountering software, and program issues.',
 					'Utilized knowledge of Java, Python, and MongoDB to troubleshoot and resolve a range of issues.',
-					'Improving the program and student experience',
-					'Provided guidance to students to improving the performance and user satisfaction.',
+					'Improved the program and student experience.',
+					'Provided guidance to students to improve performance and user satisfaction.',
 				],
 				job2Time: 'Jan 2022 - May 2022',
 
 				job3des: 'Freelance Web Developer',
 				job3: [
-					'Designed custom website for local nails salons. Increasing business traffic by almost 60%.',
-					'Developed visually appealing and functional site that improved online visibility and customer engagement.',
-					'Maintained and updated the website regularly to ensure smooth operation and address customer feedback',
+					'Designed custom website for local nails salons. Increased business traffic by almost 60%.',
+					'Developed visual appealing and functional site that improved online visibility and customer engagement.',
+					'Maintained and updated the website regularly to ensure smooth operation and address customer feedback.',
 				],
 				job3Time: 'May 2018 - 2021',
 
 				job4des: 'E-commerce Product Specialist',
 				job4: [
 					'Established an e-commerce platform to sell products online and conducted market research to identify customer needs and preferences.',
-					'Facilitated the procurement of inventory and ensured customers had access to up-to-date delivery information',
+					'Facilitated the procurement of inventory and ensured customers had access to up-to-date delivery information.',
 				],
 				job4Time: 'July 2018 - Aug 2019',
 			};
