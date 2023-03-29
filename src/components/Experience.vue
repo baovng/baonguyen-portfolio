@@ -218,40 +218,44 @@
 		name: 'About',
 		data() {
 			return {
-				job1des: 'Full-Stack Web Development Project',
-				job1: [
-					'Developing a Chinese Learning Platform system website/application project.',
-					'Responsibility as a full-stack developer using Vue3 JS, SpringBoots, Auth0, MongoDB, Git.',
-					'Utilizing my skills in frontend and backend development, database management, and graphic design to build an user-friendly and visually appealing website/application.',
-					'Designing and implementing features such as course management, student and teacher profiles, assignment submissions, and grades tracking.',
-				],
-				job1Time: 'Aug 2022 - Present',
+      job1des: "Chinese Learning Platform Development",
+      job1: [
+        "Develop frontend and backend for the engaging learning platform for TCU students using VueJS, SpringBoots, and MongoDB",
+        "Architect robust core features: course management, user profiles and management, assignment submissions, and grades tracking",
+        "Implement responsive web design principles on mobile devices to increase platform traffic by 50%",
+        "Lead team members on integrating Auth0 as the primary authentication and authorization solution, ensuring secure and streamlined access to user accounts and resources",
+        "Conduct rigorous testings and debuggings to ensure the platform's stability, performance, and security",
+        "Design a backend of the discussion forum page to reduce platform refreshing time by 70% and boost user interactions"],
+      job1Time: "Aug 2022 - Present",
 
-				job2des: 'Java and Python-based system help desk',
-				job2: [
-					'Served as the first point of contact for student encountering software, and program issues.',
-					'Utilized knowledge of Java, Python, and MongoDB to troubleshoot and resolve a range of issues.',
-					'Improved the program and student experience.',
-					'Provided guidance to students to improve performance and user satisfaction.',
-				],
-				job2Time: 'Jan 2022 - May 2022',
+      job2des: "Java and Python-based system help desk",
+      job2: [
+        "Resolved Java and Python related technical issues and coding bugs on students’ programming projects, increasing customer satisfaction rate to 95%",
+        "Utilized knowledge of Java, Python, and MongoDB to troubleshoot and resolve a range of issues",
+        "Documented the standard operating procedures for team members to troubleshoot similar issues, reducing tickets cycle time by 50%",
+        "Provided guidance to students to improving the performance and user satisfaction"
+      ],
+      job2Time: "Jan 2022 - May 2022",
 
-				job3des: 'Freelance Web Developer',
-				job3: [
-					'Designed custom website for local nails salons. Increased business traffic by almost 60%.',
-					'Developed visual appealing and functional site that improved online visibility and customer engagement.',
-					'Maintained and updated the website regularly to ensure smooth operation and address customer feedback.',
-				],
-				job3Time: 'May 2018 - 2021',
+      job3des: "Freelance Web Developer",
+      job3: [
+        "Designed mobile version and custom websites for nails salon featuring service menu and monthly promotions",
+        "Developed the dynamic pricing feature to estimate service costs based on customer selections, achieving in 60% business traffic increase",
+        "Integrated the seamlessly language switching to server Spanish speaking customers, increasing local customers by 30%",
+        "Incorporated customer feedbacks to enhance website and update contents and increase customer loyalty",
+        "Regularly maintained websites to remain website availability at 99%"],
+      job3Time: "May 2018 - Jan 2021",
 
-				job4des: 'E-commerce Product Specialist',
-				job4: [
-					'Established an e-commerce platform to sell products online and conducted market research to identify customer needs and preferences.',
-					'Facilitated the procurement of inventory and ensured customers had access to up-to-date delivery information.',
-				],
-				job4Time: 'July 2018 - Aug 2019',
-			};
-		},
+      job4des: "E-commerce Product Specialist",
+      job4: [
+        "Established an e-commerce platform to sell products online and conducted market research to identify customer needs and preferences",
+        "Analyzed sales data and customer feedback to identify trends and optimize product offerings, increasing 25% sale volume",
+        "Facilitated the procurement of inventory and ensured customers had access to up-to-date delivery information",
+        "Implemented email marking campagins, resulted in 30% increase in returning customers and 20% customer referrals",
+      ],
+      job4Time: "July 2018 - Aug 2019"
+    };
+  }
 	};
 </script>
 <style>
