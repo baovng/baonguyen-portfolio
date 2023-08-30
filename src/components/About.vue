@@ -40,7 +40,16 @@
 				me2: "I enjoy being the bridge between <span style='color: var(--primary-color);'>engineering</span> and <span style='color: var(--primary-color);'>design</span>, and feel right as home as a front-end engineer. I am experienced in developing products for the web, from simple landing pages to full-fledged web apps.",
 				me3: "Now that I am <span style='color: var(--primary-color);'>seeking a full-time job</span>, I am eager to apply my skills and knowledge to contribute to a dynamic team and take on new challenges in the field of web development.",
 				me4: "<span style='color: var(--primary-color);'>Here are a few technologies I've been working with recently:</span>",
-				langs: ['JavaScript', 'Vue 3', 'Java', 'SpringBoots', 'MongoDB', 'Python'],
+				langs: [
+					'JavaScript',
+					'Vue 3',
+					'Java',
+					'SpringBoots',
+					'MongoDB',
+					'Python',
+					'Angular',
+					'Azure DevOps',
+				],
 			};
 		},
 	};

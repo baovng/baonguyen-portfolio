@@ -88,7 +88,7 @@
 				}
 			},
 			viewMoreProjects: function () {
-				window.open('https://github.com/dacinve?tab=repositories', '_blank');
+				window.open('https://github.com/baovng', '_blank');
 			},
 		},
 	};
