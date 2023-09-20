@@ -1,10 +1,10 @@
 <template>
-	<div class="social-icons-container">
+	<div class="social-icons-container show2">
 		<div class="social-icons">
-			<a href="https://github.com/dacinve" target="_blank">
+			<a href="https://github.com/baovng" target="_blank">
 				<i class="fab fa-github"></i>
 			</a>
-			<a href="https://www.linkedin.com/in/bao-nguyen-a08581265/" target="_blank">
+			<a href="https://www.linkedin.com/in/baovng/" target="_blank">
 				<i class="fab fa-linkedin-in"></i>
 			</a>
 			<a href="https://www.facebook.com/profile.php?id=100005196251122" target="_blank">

@@ -12,12 +12,17 @@
 					@mouseleave="animateCard(index, false)"
 				>
 					<div class="card-header">
-						<h2 style="color: var(--primary-color)" class="">
-							<i class="far fa-folder"></i>
+						<h2 style="color: var(--primary-color)">
+							<i class="far fa-folder fs-3"></i>
 						</h2>
-						<a :href="project.githubLink" target="_blank" class="d-flex align-items-center">
-							<i class="fab fa-github"></i>
-						</a>
+						<div class="d-flex">
+							<a :href="project.githubLink" target="_blank" class="d-flex align-items-center me-3">
+								<i class="fab fa-github fs-3"></i>
+							</a>
+							<a :href="project.link" target="_blank" class="d-flex align-items-center">
+								<i class="fa-solid fa-arrow-up-right-from-square"></i>
+							</a>
+						</div>
 					</div>
 					<div class="card-body">
 						<h5 class="bh1 text-start fw-bold" v-html="project.projectName"></h5>
@@ -45,14 +50,34 @@
 				projects: [
 					{
 						title: 'Chinese Learning Platform',
-						githubLink: 'https://github.com/CLP-2-0',
+						link: 'https://chinesetcu.netlify.app',
+						githubLink: 'https://github.com/orgs/CLP-2-0/repositories',
 						projectName: 'Chinese Learning Platform',
 						description:
 							'Built a school system that involve different user roles with varying permissions. The website also requires a user authentication system to ensure that only authorized users can access the appropriate pages. ',
 						programming: 'Vue 3 / SpringBoots / Auth0 / MongoDB',
 					},
 					{
+						title: 'T & C Nails',
+						link: 'https://tcnails.netlify.app',
+						githubLink: 'https://github.com/baovng/TCNail',
+						projectName: 'TC Nail Salon',
+						description:
+							'TC Nail Salon is a tailor-made nail salon website crafted to meet the unique needs of our clients. Not only showcases wide range of nail services, but also provides transparent pricing details and exclusive promotional discounts.',
+						programming: 'Vue 3 / Bootstraps / JS',
+					},
+					{
+						title: 'QR Generator',
+						link: 'https://bv-qrgenerator.netlify.app',
+						githubLink: 'https://github.com/baovng/QRGenerator',
+						projectName: 'QR Generator',
+						description:
+							'QR Generator Website: Your one-stop destination for creating customized QR codes effortlessly. Generate QR codes for websites, contact information, promotions, and more, with ease',
+						programming: 'HTML / CSS / JS',
+					},
+					{
 						title: '311 Studios',
+						link: 'https://311studios.netlify.app/',
 						githubLink: 'https://github.com/dacinve/311studio',
 						projectName: '311 Studios',
 						description:
@@ -60,15 +85,26 @@
 						programming: 'HTML / CSS / JS',
 					},
 					{
-						title: 'CRUD',
-						githubLink: 'https://github.com/dacinve/UserCRUD',
-						projectName: 'User CRUD',
+						title: 'Weather',
+						link: 'https://weather-city-search.netlify.app',
+						githubLink: 'https://github.com/baovng/weatherapp',
+						projectName: 'Weather App',
 						description:
-							'My first Vue project of building a web application with CRUD functionality involved creating a system that allows users to Create, Read, Update, and Delete data in a database.',
-						programming: 'Vue 3 / Vite / Json DB',
+							'I created a Weather App based on City, get accurate, up-to-date forecasts and real-time wather data tailored to the location.',
+						programming: 'HTML / CSS / JS',
 					},
+					// {
+					// 	title: 'CRUD',
+					// 	link: 'https://usercrud111.netlify.app/',
+					// 	githubLink: 'https://github.com/dacinve/UserCRUD',
+					// 	projectName: 'User CRUD',
+					// 	description:
+					// 		'My first Vue project of building a web application with CRUD functionality involved creating a system that allows users to Create, Read, Update, and Delete data in a database.',
+					// 	programming: 'Vue 3 / Vite / Json DB',
+					// },
 					{
 						title: 'TCU',
+						link: 'https://frogproject.netlify.app/',
 						githubLink: 'https://github.com/dacinve/WebProject/tree/heroku',
 						projectName: 'TCU Horned Frog',
 						description:
@@ -147,7 +183,7 @@
 	.card-header a:hover i {
 		color: var(--primary-color);
 	}
-	.card-header > a {
+	.card-header a {
 		text-decoration: none;
 	}
 

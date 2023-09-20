@@ -11,13 +11,13 @@
 			<section>
 				<Intro />
 			</section>
-			<section id="01">
+			<section id="01" class="reveal">
 				<About />
 			</section>
-			<section id="02" class="mt-5">
+			<section id="02" class="mt-5 reveal">
 				<Experience />
 			</section>
-			<section id="03">
+			<section id="03" class="reveal">
 				<Project />
 			</section>
 
@@ -27,7 +27,7 @@
 			<section class="sm">
 				<Mail />
 			</section>
-			<section id="04">
+			<section id="04" class="reveal">
 				<Contact />
 			</section>
 			<section>
@@ -38,7 +38,7 @@
 </template>
 
 <script>
-	import LogoAnimation from '../components/LogoAnimation.vue';
+	import LogoAnimation from '@/components/LogoAnimation.vue';
 	import Navbar from '@/components/Navbar.vue';
 	import About from '@/components/About.vue';
 	import Intro from '@/components/Intro.vue';
@@ -67,9 +67,28 @@
 			};
 		},
 		mounted() {
+			window.addEventListener('scroll', this.reveal);
 			setTimeout(() => {
 				this.showLogo = false;
 			}, 3000); // Change 3000 to the duration of your logo animation in milliseconds
+		},
+		methods: {
+			reveal() {
+				var reveals = document.querySelectorAll('.reveal');
+				for (var i = 0; i < reveals.length; i++) {
+					var windowHeight = window.innerHeight;
+
+					var revealtop = reveals[i].getBoundingClientRect().top;
+					console.log(revealtop);
+					var revealpoint = 150;
+
+					if (revealtop < windowHeight - revealpoint) {
+						reveals[i].classList.add('active');
+					} else {
+						reveals[i].classList.remove('active');
+					}
+				}
+			},
 		},
 	};
 </script>
@@ -94,5 +113,14 @@
 	section {
 		max-width: 1000px;
 		/* background-color: rgb(59, 32, 71); */
+	}
+	.reveal {
+		opacity: 0;
+		transform: translateX(-30px);
+	}
+	.reveal.active {
+		opacity: 1;
+		transform: translateX(0px);
+		transition: transform 0.8s ease-in-out, opacity 1.5s ease-in-out;
 	}
 </style>

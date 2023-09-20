@@ -1,5 +1,5 @@
 <template>
-	<div class="mail-container">
+	<div class="mail-container show2">
 		<div class="mail-content">
 			<a href="https://github.com/dacinve" target="_blank">bao.v.nguyen@tcu.edu</a>
 		</div>

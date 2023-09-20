@@ -10,7 +10,7 @@
 					class="nav-link nav-link-custom-2 d-flex flex-row justify-content-end align-items-center"
 				>
 					<div v-for="(section, index) in sections" :key="index" class="ms-4">
-						<a :href="'#' + section.id" class="nav-text-custom">
+						<a :href="'#' + section.id" class="nav-text-custom show2">
 							<span>{{ section.id }} .</span>
 							{{ section.section }}
 						</a>
